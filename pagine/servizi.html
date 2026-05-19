@@ -2,109 +2,110 @@
 <html lang="it">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Servizi | fiori&giardini</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
-          rel="stylesheet">
-     <link rel="stylesheet" href="stile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri i servizi di fiori&giardini: progettazione giardini, allestimento floreale e manutenzione del verde a Torino.">
+    <meta name="author" content="Marlisa Mazzola">
+    <title>Servizi | fiori&giardini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stile.css">
 </head>
 
 <body>
 
-     <header>
-          <div class="nav-container">
-               <div class="logo-area">
-                    <a href="landingpage.html">
-                         <img id="logo" src="immagini/logo.png" alt="logo">
-                    </a>
-               </div>
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="landingpage.html">
+                    <img id="logo" src="immagini/logo.png" alt="fiori&giardini – torna alla home">
+                </a>
+            </div>
 
-               <nav class="navbar">
-                    <input type="checkbox" id="menu-toggle" style="display: none;"> <label for="menu-toggle"
-                         class="hamburger">
-                         <span></span>
-                         <span></span>
-                         <span></span>
-                    </label>
-                    <ul class="menu">
-                         <li><a href="landingpage.html">Home</a></li>
-                         <li><a href="servizi.html">Servizi</a></li>
-                         <li><a href="contatti.html">Contatti</a></li>
-                    </ul>
-               </nav>
-          </div>
-     </header>
+            <nav class="navbar" aria-label="Navigazione principale">
+                <input type="checkbox" id="menu-toggle" aria-hidden="true">
+                <label for="menu-toggle" class="hamburger" aria-label="Apri il menu di navigazione">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="menu" role="list">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-     <section class="page-hero">
-          <h1 class="section-title">I Nostri Servizi</h1>
-          <p class="pre-title">Esperienza e dedizione per ogni spazio verde</p>
-     </section>
+    <section class="page-hero" aria-labelledby="servizi-titolo">
+        <h1 class="section-title" id="servizi-titolo">I Nostri Servizi</h1>
+        <p class="pre-title">Esperienza e dedizione per ogni spazio verde</p>
+    </section>
 
-     <div class="content-wrapper">
-          <div class="servizio-row">
-               <img src="./immagini/giardino.jpg" class="imgServizi">
-               <div class="text-servizio">
-                    <h3>Progettazione e realizzazione giardini</h3>
-                    <p>Progettiamo e realizziamo spazi verdi personalizzati, studiati per valorizzare ogni ambiente
-                         esterno. Dall'idea iniziale alla messa a dimora delle piante, curiamo ogni dettaglio per creare
-                         giardini armoniosi, funzionali e adatti allo stile e alle esigenze del cliente.</p>
-               </div>
-          </div>
+    <div class="content-wrapper" role="main">
+        <div class="servizio-row">
+            <img src="./immagini/giardino.jpg" class="imgServizi" alt="Un giardino progettato e realizzato da fiori&giardini">
+            <div class="text-servizio">
+                <h3>Progettazione e realizzazione giardini</h3>
+                <p>Progettiamo e realizziamo spazi verdi personalizzati, studiati per valorizzare ogni ambiente
+                    esterno. Dall'idea iniziale alla messa a dimora delle piante, curiamo ogni dettaglio per creare
+                    giardini armoniosi, funzionali e adatti allo stile e alle esigenze del cliente.</p>
+            </div>
+        </div>
 
-          <div class="servizio-row reverse">
-               <img src="./immagini/fiori.jpg" class="imgServizi">
-               <div class="text-servizio">
-                    <h3>Cura e allestimento floreale</h3>
-                    <p>Ci occupiamo della scelta, piantumazione e manutenzione di fiori stagionali e ornamentali, ideali
-                         per dare colore e vitalità a giardini, terrazzi e balconi. Realizziamo composizioni floreali e
-                         aiuole decorative pensate per ogni stagione.</p>
-               </div>
-          </div>
+        <div class="servizio-row reverse">
+            <img src="./immagini/fiori.jpg" class="imgServizi" alt="Composizione floreale colorata curata dal nostro team">
+            <div class="text-servizio">
+                <h3>Cura e allestimento floreale</h3>
+                <p>Ci occupiamo della scelta, piantumazione e manutenzione di fiori stagionali e ornamentali, ideali
+                    per dare colore e vitalità a giardini, terrazzi e balconi. Realizziamo composizioni floreali e
+                    aiuole decorative pensate per ogni stagione.</p>
+            </div>
+        </div>
 
-          <div class="servizio-row">
-               <img src="./immagini/areeverdi.jpg" class="imgServizi">
-               <div class="text-servizio">
-                    <h3>Manutenzione del verde</h3>
-                    <p>Offriamo servizi completi di manutenzione per mantenere il tuo giardino sempre curato e in
-                         salute. Taglio del prato, potature, trattamenti specifici e pulizia degli spazi verdi vengono
-                         eseguiti con attenzione e professionalità.</p>
-               </div>
-          </div>
-     </div>
+        <div class="servizio-row">
+            <img src="./immagini/areeverdi.jpg" class="imgServizi" alt="Manutenzione di un'area verde pubblica">
+            <div class="text-servizio">
+                <h3>Manutenzione del verde</h3>
+                <p>Offriamo servizi completi di manutenzione per mantenere il tuo giardino sempre curato e in
+                    salute. Taglio del prato, potature, trattamenti specifici e pulizia degli spazi verdi vengono
+                    eseguiti con attenzione e professionalità.</p>
+            </div>
+        </div>
+    </div>
 
-     <footer>
-          <div class="footer-main">
-               <div class="footer-section">
-                    <h4>Indirizzo</h4>
-                    <p>Via dei Giardini 12, Torino</p>
-                    <p>P.IVA 01234567890</p>
-                    <div class="social-icons">
-                         <a><img src="immagini/facebook.png" alt="Facebook"></a>
-                         <a><img src="immagini/instagram.png" alt="Instagram"></a>
-                         <a><img src="immagini/whatsapp.png" alt="WhatsApp"></a>
-                    </div>
-               </div>
-               <div class="footer-section">
-                    <h4>Contatti</h4>
-                    <p>+39 02 1234567</p>
-                    <p>info@fioriegiardini.it</p>
-               </div>
-               <div class="footer-section">
-                    <h4>Esplora</h4>
-                    <ul class="footer-links">
-                         <li><a href="servizi.html">Servizi</a></li>
-                         <li>Cookie</li>
-                         <li>Privacy</a></li>
-                    </ul>
-               </div>
-          </div>
-          <div class="footer-bar">
-               <p>&copy; 2026 fiori&giardini | Marlisa Mazzola</p>
-          </div>
-     </footer>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section">
+                <h4>Indirizzo</h4>
+                <p>Via dei Giardini 12, Torino</p>
+                <p>P.IVA 01234567890</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Seguici su Facebook"><img src="immagini/facebook.png" alt=""></a>
+                    <a href="#" aria-label="Seguici su Instagram"><img src="immagini/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Scrivici su WhatsApp"><img src="immagini/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contatti</h4>
+                <p><a href="tel:+390212345670" class="footer-contact-link">+39 02 1234567</a></p>
+                <p><a href="mailto:info@fioriegiardini.it" class="footer-contact-link">info@fioriegiardini.it</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Esplora</h4>
+                <ul class="footer-links">
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="#">Cookie</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <p>&copy; 2026 fiori&amp;giardini | Marlisa Mazzola</p>
+        </div>
+    </footer>
 
 </body>
 

@@ -25,6 +25,7 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* HEADER E NAVBAR */
@@ -51,6 +52,7 @@ header {
 #logo {
     height: 75px;
     width: auto;
+    max-width: 160px;
 }
 
 .navbar .menu {
@@ -144,6 +146,8 @@ header {
 .btn-primary {
     background: var(--primary);
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -308,6 +312,36 @@ footer {
     background-color: var(--white);
 }
 
+/* Link telefono/email nel footer */
+.footer-contact-link {
+    color: #d1d1d1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-contact-link:hover {
+    color: var(--secondary);
+}
+
+/* Messaggio di conferma form */
+.form-success {
+    background: #edf7ed;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* Fix background-attachment: fixed non funziona su iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    #hero {
+        background-attachment: scroll;
+    }
+}
+
 /* Layout Servizi */
 .servizio-row {
     display: flex;
@@ -405,25 +439,38 @@ footer {
 }
 
 /* RESPONSIVE MOBILE */
+/* Nasconde il checkbox usato per il menu hamburger */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .brand-name {
-        font-size: 3.5rem;
+
+    /* --- LAYOUT GENERALE --- */
+    /* Riduce padding laterale dell'header su mobile */
+    .nav-container {
+        padding: 0 20px;
     }
 
-    .grid-chisiamo {
-        grid-template-columns: 1fr;
+    /* Logo più piccolo su mobile */
+    #logo {
+        height: 55px;
     }
 
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
+    /* --- HAMBURGER MENU --- */
+    /* Mostra l'hamburger su mobile */
     .hamburger {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 5px;
         cursor: pointer;
+        padding: 5px;
+        z-index: 1100;
     }
 
     .hamburger span {
@@ -431,64 +478,141 @@ footer {
         width: 25px;
         height: 3px;
         background: var(--primary);
+        border-radius: 2px;
+        transition: 0.3s;
     }
 
-    #menu-toggle {
-        display: none;
+    /* Nasconde il menu orizzontale, lo posiziona come dropdown */
+    .navbar {
+        position: static;
     }
 
     .navbar .menu {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 90px;
         left: 0;
         width: 100%;
         background: white;
         flex-direction: column;
-        padding: 40px;
+        padding: 30px 20px;
         text-align: center;
+        gap: 25px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        z-index: 999;
     }
 
-    #menu-toggle:checked~.menu {
+    /* Apre il menu quando checkbox è spuntata */
+    #menu-toggle:checked ~ .menu {
         display: flex;
     }
-}
 
-@media (max-width: 768px) {
+    /* --- HERO --- */
+    /* Testo principale ridotto per non uscire dallo schermo */
+    .brand-name {
+        font-size: clamp(2.5rem, 12vw, 5rem);
+        letter-spacing: -1px;
+    }
 
+    .hero-tagline {
+        font-size: clamp(0.7rem, 3vw, 1.2rem);
+        letter-spacing: 2px;
+    }
+
+    /* Pulsanti hero uno sotto l'altro */
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 80%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* --- CHI SIAMO --- */
+    .grid-chisiamo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Titoli sezione ridotti */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Immagini gallery una sotto l'altra */
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .img-card img {
+        height: 220px;
+    }
+
+    /* --- SERVIZI --- */
     .servizio-row,
     .servizio-row.reverse {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
     }
 
+    /* Immagini servizi a larghezza piena */
+    .imgServizi {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .text-servizio h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Padding della sezione servizi */
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    /* --- FORM CONTATTI --- */
     .form-card {
-        padding: 30px;
+        padding: 25px 20px;
     }
-}
 
-@media (max-width: 768px) {
-    /* --- MODIFICA SOLO IL FOOTER MOBILE --- */
+    .form-card .btn-primary {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
 
+    /* --- FOOTER --- */
     .footer-main {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 30px;
+        padding: 0 20px;
     }
 
-    .footer-section {
+    .footer-section,
+    .footer-section:first-child {
         width: 100%;
+        min-width: unset;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         margin: 0;
         padding: 0;
     }
 
     .social-icons {
-        display: flex;
         justify-content: center;
         margin: 15px 0 0 0;
         width: 100%;

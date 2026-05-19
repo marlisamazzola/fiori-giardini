@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fiori&giardini – Progettiamo e realizziamo giardini su misura dal 1995. Architettura del verde, cura floreale e manutenzione a Torino.">
+    <meta name="author" content="Marlisa Mazzola">
     <title>fiori&giardini | Architettura del Verde</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stile.css">
 </head>
 
@@ -19,18 +19,18 @@
         <div class="nav-container">
             <div class="logo-area">
                 <a href="landingpage.html">
-                    <img id="logo" src="immagini/logo.png" alt="logo">
+                    <img id="logo" src="immagini/logo.png" alt="fiori&giardini – torna alla home">
                 </a>
             </div>
 
-            <nav class="navbar">
-                <input type="checkbox" id="menu-toggle" style="display: none;"> <label for="menu-toggle"
-                    class="hamburger">
+            <nav class="navbar" aria-label="Navigazione principale">
+                <input type="checkbox" id="menu-toggle" aria-hidden="true">
+                <label for="menu-toggle" class="hamburger" aria-label="Apri il menu di navigazione">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
-                <ul class="menu">
+                <ul class="menu" role="list">
                     <li><a href="landingpage.html">Home</a></li>
                     <li><a href="servizi.html">Servizi</a></li>
                     <li><a href="contatti.html">Contatti</a></li>
@@ -39,9 +39,9 @@
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" aria-label="Sezione principale">
         <div class="hero-overlay">
-            <h1 class="brand-name">fiori<span>&</span>giardini</h1>
+            <h1 class="brand-name">fiori<span>&amp;</span>giardini</h1>
             <p class="hero-tagline">Progettiamo emozioni verdi dal 1995.</p>
             <div class="hero-cta">
                 <a href="#chisiamo" class="btn-primary">Scopri di più</a>
@@ -50,10 +50,10 @@
         </div>
     </section>
 
-    <section id="chisiamo">
+    <section id="chisiamo" aria-labelledby="chisiamo-titolo">
         <div class="content-wrapper">
             <span class="pre-title">La nostra storia</span>
-            <h2 class="section-title">Passione per il dettaglio</h2>
+            <h2 class="section-title" id="chisiamo-titolo">Passione per il dettaglio</h2>
             <div class="grid-chisiamo">
                 <div class="text-side">
                     <p>Siamo un team di professionisti del verde uniti dalla passione per la natura. Non costruiamo solo
@@ -62,8 +62,8 @@
                         cicli naturali e della sostenibilità ambientale.</p>
                 </div>
                 <div class="image-gallery">
-                    <div class="img-card"><img src="./immagini/giardinaggio-ditta.jpg" alt="Lavoro"></div>
-                    <div class="img-card"><img src="./immagini/giardinieri.jpg" alt="Team"></div>
+                    <div class="img-card"><img src="./immagini/giardinaggio-ditta.jpg" alt="Il nostro team al lavoro in un cantiere verde"></div>
+                    <div class="img-card"><img src="./immagini/giardinieri.jpg" alt="I giardinieri di fiori&giardini durante la cura di un giardino"></div>
                 </div>
             </div>
         </div>
@@ -76,27 +76,27 @@
                 <p>Via dei Giardini 12, Torino</p>
                 <p>P.IVA 01234567890</p>
                 <div class="social-icons">
-                    <a><img src="immagini/facebook.png" alt="Facebook"></a>
-                    <a><img src="immagini/instagram.png" alt="Instagram"></a>
-                    <a><img src="immagini/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" aria-label="Seguici su Facebook"><img src="immagini/facebook.png" alt=""></a>
+                    <a href="#" aria-label="Seguici su Instagram"><img src="immagini/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Scrivici su WhatsApp"><img src="immagini/whatsapp.png" alt=""></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h4>Contatti</h4>
-                <p>+39 02 1234567</p>
-                <p>info@fioriegiardini.it</p>
+                <p><a href="tel:+390212345670" class="footer-contact-link">+39 02 1234567</a></p>
+                <p><a href="mailto:info@fioriegiardini.it" class="footer-contact-link">info@fioriegiardini.it</a></p>
             </div>
             <div class="footer-section">
                 <h4>Esplora</h4>
                 <ul class="footer-links">
                     <li><a href="servizi.html">Servizi</a></li>
-                    <li>Cookie</li>
-                    <li>Privacy</a></li>
+                    <li><a href="#">Cookie</a></li>
+                    <li><a href="#">Privacy</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bar">
-            <p>&copy; 2026 fiori&giardini | Marlisa Mazzola</p>
+            <p>&copy; 2026 fiori&amp;giardini | Marlisa Mazzola</p>
         </div>
     </footer>
 
