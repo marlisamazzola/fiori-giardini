@@ -1,6 +1,6 @@
 # 🌿 fiori&giardini
 
-Sito web statico per un'azienda di architettura del verde, realizzato come esercizio frontend.
+Sito web statico per un'azienda di giardinaggio, realizzato come esercizio frontend.
 
 ## Pagine
 
