@@ -2,7 +2,7 @@
 
 Sito web statico per un'azienda di architettura del verde, realizzato come esercizio frontend.
 
-## 📄 Pagine
+## Pagine
 
 | File | Descrizione |
 |------|-------------|
@@ -11,14 +11,14 @@ Sito web statico per un'azienda di architettura del verde, realizzato come eserc
 | `contatti.html` | Pagina con form di contatto |
 | `stile.css` | Foglio di stile unico per tutte le pagine |
 
-## 🛠️ Tecnologie utilizzate
+## Tecnologie utilizzate
 
 - **HTML5** 
 - **CSS3** puro 
 - **JavaScript** vanilla — solo per il feedback del form
 - **Google Fonts** — Playfair Display, Montserrat, Open Sans
 
-## ✅ Caratteristiche
+## Caratteristiche
 
 - **Responsive** — layout adattivo per mobile, tablet e desktop
 - **Menu hamburger** CSS-only (nessun JavaScript)
@@ -27,13 +27,13 @@ Sito web statico per un'azienda di architettura del verde, realizzato come eserc
 - **Feedback form** — messaggio di conferma dopo l'invio
 - **Fix iOS Safari** — `background-attachment: scroll` su dispositivi Apple
 
-## 🚀 Come visualizzarlo
+## Come visualizzarlo
 
 Essendo un sito statico, basta aprire `landingpage.html` nel browser. Nessuna dipendenza da installare.
 
 > **Nota:** il form punta a `/invio.php` che non è incluso in questo repository.
 > Per attivarlo in produzione è necessario configurare un backend PHP o sostituire con un servizio come [Formspree](https://formspree.io).
 
-## 👩‍💻 Autrice
+## Autrice
 
 Marlisa Mazzola — esercizio di front-end development
