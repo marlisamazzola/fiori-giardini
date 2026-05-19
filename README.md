@@ -34,6 +34,4 @@ Essendo un sito statico, basta aprire `landingpage.html` nel browser. Nessuna di
 > **Nota:** il form punta a `/invio.php` che non è incluso in questo repository.
 > Per attivarlo in produzione è necessario configurare un backend PHP o sostituire con un servizio come [Formspree](https://formspree.io).
 
-## Autrice
 
-Marlisa Mazzola — esercizio di front-end development
